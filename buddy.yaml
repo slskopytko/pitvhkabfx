@@ -1,0 +1,12 @@
+- pipeline: "1111"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/master"
+  fail_on_prepare_env_warning: true
+  actions:
+  - action: "Push to https://app.sd8.com/ttests/cfvqekkqye/pipelines/pipeline/70376/action/add/git-push"
+    type: "PUSH"
+    git_auth_mode: "CURRENT"
+    comment: "$BUDDY_EXECUTION_ID"
+    without_force: true
